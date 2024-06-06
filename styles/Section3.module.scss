@@ -1,4 +1,4 @@
-@import './variables.scss';
+@import './Variables.scss';
 
 .elementGroup {
   margin-bottom: $padding-large;
@@ -20,7 +20,7 @@
     margin-bottom: $padding-medium;
     border: 1px solid $border-color;
     border-radius: 5px;
-    flex: 2;    
+    flex: 2;
   }
 }
 
@@ -66,5 +66,7 @@
     .converterInput,
     .swap {
       width: $width-100;
-      margin-left:0
-    }}}
+      margin-left: 0
+    }
+  }
+}

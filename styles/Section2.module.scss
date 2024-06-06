@@ -1,0 +1,8 @@
+@import './Variables.scss';
+
+@media (min-width: 768px) {
+  .section2 {
+    display: flex;
+    justify-content: space-around;
+  }
+}

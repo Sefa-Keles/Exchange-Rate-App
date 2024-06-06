@@ -1,0 +1,32 @@
+@import './Variables.scss';
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+
+  .login {
+    padding: $padding-small $padding-medium;
+    background-color: $background-color-primary;
+    color: white;
+    border: none;
+    border-radius: $border-radius-small;
+    cursor: pointer;
+    font-size: $font-size-medium;
+    margin: $padding-small;
+    transition: background-color $transition-duration ease;
+
+    &:hover {
+      background-color: $background-color-secondary;
+    }
+  }
+
+  .logo {
+    top: 299px;
+    left: 81px;
+    width: 422px;
+    height: 48px;
+    background: transparent url('../assets/Group\ 3773.svg') 0% 0% no-repeat padding-box;
+    opacity: 1;
+  }
+}

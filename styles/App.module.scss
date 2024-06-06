@@ -1,0 +1,39 @@
+@import './Variables.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  @media (min-width: 768px) {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: $width-100;
+  max-width: $max-width-container;
+  margin: 0 auto;
+  padding: $padding-large;
+  box-sizing: border-box;
+}
+
+.loginButton {
+  background-color: $background-color-tertiary;
+  color: white;
+  border: none;
+  padding: $padding-small $padding-medium;
+  border-radius: $border-radius-small;
+  cursor: pointer;
+  font-size: $font-size-medium;
+  margin: $padding-small;
+  transition: background-color $transition-duration ease;
+
+  &:hover {
+    background-color: $background-color-hover;
+  }
+}

@@ -1,0 +1,48 @@
+@import './Variables.scss';
+
+.section1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $padding-large;
+
+    .textMainContainer {
+        flex: 1;
+
+        .section1Text {
+            font-size: $font-size-xl;
+
+            .section1Text1,
+            .section1Text2 {
+                font-size: $font-size-xxl;
+                margin: $padding-small 0;
+            }
+
+            .section1Paragraph {
+                margin: $padding-medium 0;
+            }
+
+            .btnSection1 {
+                padding: $padding-medium $padding-large;
+                background-color: $background-color-primary;
+                color: white;
+                border: none;
+                border-radius: $border-radius-large;
+                cursor: pointer;
+                font-size: $font-size-large;
+                transition: background-color $transition-duration ease;
+                text-transform: uppercase;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+                &:hover {
+                    background-color: $background-color-secondary;
+                }
+            }
+        }
+    }
+
+    .hero {
+        flex: 1;
+        max-width: 500px;
+    }
+}

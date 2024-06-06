@@ -1,0 +1,71 @@
+.elementGroup {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.inputLabel {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    flex: 1;
+}
+
+.converterInput {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 2;
+}
+
+.convert {
+    text-align: center;
+}
+
+.convert {
+    background-color: #63A022;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.convert:hover {
+    background-color: #87c241;
+}
+
+.swap {
+    text-align: center;
+    flex: 1;
+    margin-left: 10px;
+}
+
+.btnSwap {
+    background-color: #fff;
+    border: none;
+    padding: 5px 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+@media (min-width: 768px) {
+    .elementGroup {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .inputLabel,
+    .converterInput,
+    .swap {
+        width: 100%;
+        margin-left: 0;
+    }
+}

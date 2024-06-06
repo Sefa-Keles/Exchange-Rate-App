@@ -1,0 +1,70 @@
+@import './variables.scss';
+
+.elementGroup {
+  margin-bottom: $padding-large;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .inputLabel {
+    display: block;
+    margin-bottom: $padding-small;
+    font-weight: bold;
+    flex: 1;
+  }
+
+  .converterInput {
+    width: $width-100;
+    padding: $padding-small;
+    margin-top: $padding-small;
+    margin-bottom: $padding-medium;
+    border: 1px solid $border-color;
+    border-radius: 5px;
+    flex: 2;    
+  }
+}
+
+.convert {
+  text-align: center;
+
+  & {
+    background-color: $background-color-primary;
+    color: white;
+    border: none;
+    padding: $padding-small $padding-medium;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color $transition-duration ease;
+
+    &:hover {
+      background-color: $background-color-secondary;
+    }
+  }
+}
+
+.swap {
+  text-align: center;
+  flex: 1;
+  margin-left: $padding-small;
+
+  .btnSwap {
+    background-color: #fff;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+}
+
+@media (min-width: 768px) {
+  .elementGroup {
+    flex-direction: column;
+    align-items: flex-start;
+
+    .inputLabel,
+    .converterInput,
+    .swap {
+      width: $width-100;
+      margin-left:0
+    }}}

@@ -1,0 +1,81 @@
+@import './Variables.scss';
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: $width-100;
+  height: $width-100;
+  overflow: auto;
+  background-color: $modal-background-color;
+
+  &.displayBlock {
+    display: block;
+  }
+
+  &.displayNone {
+    display: none;
+  }
+
+  .modalContent {
+    background-color: $modal-content-background-color;
+    margin: 15% auto;
+    padding: $padding-large;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: $max-width-modal;
+    border-radius: $border-radius-large;
+
+    @media (min-width: 768px) {
+      margin: 10% auto;
+      width: 60%;
+    }
+
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+
+      &:hover,
+      &:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    }
+
+    .formGroup {
+      margin-bottom: $padding-medium;
+
+      label {
+        display: block;
+        margin-bottom: $padding-small;
+      }
+
+      input {
+        width: $width-100;
+        padding: 8px;
+        box-sizing: border-box;
+      }
+    }
+
+    .submitButton {
+      background-color: $background-color-primary;
+      color: white;
+      border: none;
+      padding: $padding-small $padding-medium;
+      border-radius: $border-radius-small;
+      cursor: pointer;
+      font-size: $font-size-medium;
+      width: $width-100;
+      transition: background-color $transition-duration ease;
+
+      &:hover {
+        background-color: $background-color-secondary;
+      }
+    }
+  }
+}
